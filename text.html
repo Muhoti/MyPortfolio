@@ -1,0 +1,45 @@
+
+
+
+<script type="text/javascript">
+  /*PHONE'S INDEX PAGE*/
+  @media (max-width: 870px) {
+    label #sign-one {
+      display: block;
+    }
+    nav ul {
+      position: fixed;
+      width: 30%;
+      height: 20vh;
+      background-color: grey;
+      top: 50px;
+      left: -100px;
+      text-align: center;
+      transition: .5s;
+      z-index: 10;
+      border-radius: 0 10px 10px 0;
+    }
+
+    nav ul li {
+      display: block;
+      margin: 10px 0 5px;
+      line-height: 20px;
+    }
+
+    nav ul li a {
+      font-family: Catamaran;
+      font-size: 12px;
+    }
+
+    #res-menu:checked ~ ul{
+      left: 0;
+    }
+    #res-menu: checked ~ label #sign-one {
+      display: none;
+    }
+    #res-menu: checked ~ label #sign-two {
+      display: block;
+    }
+  }
+
+</script>
